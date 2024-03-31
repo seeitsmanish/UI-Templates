@@ -1,10 +1,10 @@
 "use client";
+import Button from "../Button/Button";
 import LogoImage from "@/public/logo-image.png";
-export default function Appbar({ appConfig }) {
-  const { BackgroundColor, TextColor, ButtonColor } = appConfig;
+export default function Appbar() {
   return (
     <nav
-      className={`w-full bg-${BackgroundColor.primary} h-16 p-2 flex justify-between items-center shadow-md`}
+      className={`w-full bg-white h-16 p-2 flex justify-between items-center shadow-md`}
     >
       <div className="logo-container flex items-center gap-1">
         <img
@@ -24,17 +24,14 @@ export default function Appbar({ appConfig }) {
           </li>
         </ul>
       </div>
-      <div className="auth-buttons text-lg text hidden md:inline md:flex md:gap-3 ">
-        <button
-          className={`border-2 ${ButtonColor.border} p-1 rounded-[40px] w-24 text-blue-600 hover:bg-slate-100 ease-in-out duration-300 `}
-        >
+      <div className="auth-buttons text-lg text hidden  md:flex md:gap-3 ">
+        <Button variant="primary" size="md" className="eas-in-out duration-300">
           Login
-        </button>
-        <button
-          className={`${ButtonColor.primary} p-1 rounded-[40px] w-24 text-white hover:bg-blue-800 ease-in-out duration-300`}
-        >
-          SignUp
-        </button>
+        </Button>
+
+        <Button variant="outline" size="md" className="eas-in-out duration-300">
+          Signup
+        </Button>
       </div>
 
       <div className="mobile-side-bar md:hidden"></div>
