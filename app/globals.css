@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+@layer base {
+    :root {
+        --color-button-primary: theme(colors.black);
+        --color-button-secondary: theme(colors.slate.300);
+        --color-button-outline: theme(colors.white);
+        --color-button-primary-hover: theme(colors.stone.800);
+        --color-button-secondary-hover: theme(colors.slate.400);
+        --color-button-outline-hover: theme(colors.slate.200);
+    }
+
+}
+
+
+

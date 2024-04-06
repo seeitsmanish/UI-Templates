@@ -12,6 +12,19 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+
+      backgroundColor: {
+        primary: "var(--color-button-primary)",
+        secondary: "var(--color-button-secondary)",
+        outline: "var(--color-button-outline)",
+        "primary-hover": "var(--color-button-primary-hover)",
+        "secondary-hover": "var(--color-button-secondary-hover)",
+        "outline-hover": "var(--color-button-outline-hover)",
+      },
+
+      borderColor: {
+        outline: "var(--color-button-primary)",
+      },
     },
   },
   plugins: [],
