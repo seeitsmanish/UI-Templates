@@ -22,9 +22,10 @@ export default function Button({
 const buttonVariants = cva("rounded-md", {
   variants: {
     variant: {
-      primary: "bg-black text-white hover:bg-stone-800",
-      secondary: "bg-slate-300 text-black hover:bg-slate-400",
-      outline: "border-2 border-black text-black hover:bg-slate-200",
+      primary: "bg-primary text-white hover:bg-primary-hover",
+      secondary: "bg-secondary text-black hover:bg-secondary-hover",
+      outline:
+        "border-2 border-outline bg-outline text-black hover:bg-outline-hover",
     },
     size: {
       sm: "text-sm px-2 py-1",

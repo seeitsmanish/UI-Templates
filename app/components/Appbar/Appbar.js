@@ -25,11 +25,19 @@ export default function Appbar() {
         </ul>
       </div>
       <div className="auth-buttons text-lg text hidden  md:flex md:gap-3 ">
-        <Button variant="primary" size="md" className="eas-in-out duration-300">
+        <Button
+          variant="primary"
+          size="md"
+          className="ease-in-out duration-300 w-[100px]"
+        >
           Login
         </Button>
 
-        <Button variant="outline" size="md" className="eas-in-out duration-300">
+        <Button
+          variant="outline"
+          size="md"
+          className="ease-in-out duration-300 w-[100px]"
+        >
           Signup
         </Button>
       </div>

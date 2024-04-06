@@ -7,7 +7,7 @@ export default function page() {
         Hello
       </Button>
 
-      <Button variant="secondary" size="md">
+      <Button onClick={() => console.log("Hiii")} variant="secondary" size="md">
         Hello
       </Button>
 
