@@ -2,19 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 @layer base {
-    :root {
-        --color-button-primary: theme(colors.black);
-        --color-button-secondary: theme(colors.slate.300);
-        --color-button-outline: theme(colors.white);
-        --color-button-primary-hover: theme(colors.stone.800);
-        --color-button-secondary-hover: theme(colors.slate.400);
-        --color-button-outline-hover: theme(colors.slate.200);
-    }
+  :root {
+    /* Buttons */
+    --color-button-primary: theme(colors.black);
+    --color-button-secondary: theme(colors.slate.300);
+    --color-button-outline: theme(colors.white);
+    --color-button-primary-hover: theme(colors.stone.800);
+    --color-button-secondary-hover: theme(colors.slate.400);
+    --color-button-outline-hover: theme(colors.slate.200);
 
+    /* Background */
+    --color-bg-primary: theme(colors.white);
+    --color-bg-secondary: theme(colors.black);
+
+    /* Text Color */
+    --color-text-primary: theme(colors.black);
+    --color-text-primary-hover: theme(colors.stone.400);
+    --color-text-secondary: theme(colors.white);
+    --color-text-secondary-hover: theme(colors.slate.400);
+
+
+
+
+
+
+
+
+  }
 }
-
-
-

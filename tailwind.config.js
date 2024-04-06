@@ -20,10 +20,22 @@ module.exports = {
         "primary-hover": "var(--color-button-primary-hover)",
         "secondary-hover": "var(--color-button-secondary-hover)",
         "outline-hover": "var(--color-button-outline-hover)",
+
+        skin: {
+          primary: "var(--color-bg-primary)",
+          secondary: "var(--color-text-secondary)",
+        },
       },
 
       borderColor: {
         outline: "var(--color-button-primary)",
+      },
+
+      textColor: {
+        primary: "var(--color-text-primary)",
+        secondary: "var( --color-text-secondary)",
+        "primary-hover": "var(--color-text-primary-hover)",
+        "secondary-hover": "var( --color-text-secondary-hover)",
       },
     },
   },
