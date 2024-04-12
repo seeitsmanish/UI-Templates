@@ -7,11 +7,14 @@ export default function Button({
   className,
   variant,
   size,
+  disabled,
   ...props
 }) {
   return (
     <button
-      className={cn(buttonVariants({ variant, size, className }))}
+      className={cn(buttonVariants({ variant, size, className }), {
+        "opacity-50 cursor-not-allowed": disabled,
+      })}
       {...props}
     >
       {children}
